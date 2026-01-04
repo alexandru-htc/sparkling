@@ -1,3 +1,6 @@
+
+## N O T  W O R K I N G   Y E T
+
 # PySpark Prerequisites Installation Scripts for Windows
 
 This directory contains scripts to install all prerequisites needed for running PySpark tests on Windows.
