@@ -1,5 +1,7 @@
 """Module to create a test DataFrame using PySpark."""
-from pyspark.sql import SparkSession, DataFrame
+
+from pyspark.sql import DataFrame, SparkSession
+
 
 def get_test_df(spark: SparkSession) -> DataFrame:
     "just a test dataframe"
