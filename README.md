@@ -15,7 +15,7 @@ wsl.exe --install [Distro]
 ```
 Where distro is a distro like Ubuntu
 
-The following command will be started in wsl terminal 
+__The following commands will be started in wsl terminal !!!__ 
 
 [Install Python](https://www.python.org/downloads/latest/python3.12/) if not already installed
 
