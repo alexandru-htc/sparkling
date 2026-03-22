@@ -17,6 +17,8 @@ Where distro is a distro like Ubuntu
 
 __The following commands will be started in wsl terminal !!!__ 
 
+For Databricks Runtime 16..3 see the branch [DBKS_RUNTIME_16_4]https://github.com/alexandru-htc/sparkling/tree/DBKS_RUNTIME_16_4
+
 [Install Python](https://www.python.org/downloads/latest/python3.12/) if not already installed
 
 pip shall now be installed togheter with python.  
@@ -25,22 +27,21 @@ pip shall now be installed togheter with python.
 
 [Install poetry](https://python-poetry.org/docs/#installation), needed for project install
 
-[install java](https://www.azul.com/downloads/?version=java-8-lts&os=ubuntu&package=jdk#zulu) The link is for the version 1.8. The project is tested with THIS version. Other versions can work or not.
+[install SDKMAN](https://sdkman.io/), zip and unzip are prerequisites!
 ```
-java -version
-openjdk version "1.8.0_472"
-OpenJDK Runtime Environment (Zulu 8.90.0.19-CA-linux64) (build 1.8.0_472-b08)
-OpenJDK 64-Bit Server VM (Zulu 8.90.0.19-CA-linux64) (build 25.472-b08, mixed mode)
-```
-Also, set your JAVA_HOME correctly. Mine is 
-```
-JAVA_HOME=/usr/lib/jvm/zulu8-ca-amd64
-```
-checkout the project in your folder
+curl -s "https://get.sdkman.io" | bash
+# install java:
+sdk install java 17.0.18-zulu
+# set home:
+sdk default java 17.0.18-zulu
+# kill terminal / restart
+java --version
+openjdk 17.0.18 2026-01-20 LTS
+OpenJDK Runtime Environment Zulu17.64+15-CA (build 17.0.18+8-LTS)
 ```
 git clone https://github.com/alexandru-htc/sparkling.git
 ```
-assuming that sparkling is the folder where the project is located (for instance where the file pyproject.toml exists), open a command promt there.
+assuming that sparkling is the folder where the project is located (for instance where the file pyproject.toml exists), open a command prompt there.
 Create the virtual environment and install the project
 ```
 python -m venv .venv
