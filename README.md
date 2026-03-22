@@ -39,19 +39,14 @@ java --version
 openjdk 17.0.18 2026-01-20 LTS
 OpenJDK Runtime Environment Zulu17.64+15-CA (build 17.0.18+8-LTS)
 ```
+Clone the project
+```
 git clone https://github.com/alexandru-htc/sparkling.git
 ```
 assuming that sparkling is the folder where the project is located (for instance where the file pyproject.toml exists), open a command prompt there.
 Create the virtual environment and install the project
 ```
 python -m venv .venv
-# ensure that your virtual environment is activated  
-# (depending on VSCODE, it can be, that the environment  
-# will be automically activated)! If not  
-source ./.venv/bin/activate
-```
-Now, the command prompt shall begin with something like ((.venv)) your_username: ....
-```
 poetry lock
 poetry install
 ```
@@ -68,7 +63,20 @@ pytest code/test_installed.py
 Start the vscode in wsl, if needed
 ```
 code .
+# ensure that your virtual environment is activated  
+# (depending on VSCODE, it can be, that the environment  
+# will be automically activated)! If not, in the terminal run 
+source ./.venv/bin/activate
 ```
+Now, the command prompt shall begin with something like 
+```
+((.venv)) your_username: ....
+```
+You can do the same test in the vscode terminal
+```
+pytest code/test_installed.py
+```
+
 
 
 
