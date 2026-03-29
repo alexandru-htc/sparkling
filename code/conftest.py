@@ -6,10 +6,10 @@ import pytest
 from pyspark.sql import SparkSession
 
 
-@pytest.fixture(scope="session", name="fx_spark")  # type: ignore
+@pytest.fixture(scope="session", name="fx_spark")
 def spark() -> Generator[SparkSession, None, None]:
     """Create a SparkSession for testing purposes."""
-    spark_session = (  # type: ignore
+    spark_session = (
         SparkSession.builder.master("local[*]")  # type: ignore[attr-defined]
         .appName("TestApp")
         .config("spark.driver.host", "127.0.0.1")
