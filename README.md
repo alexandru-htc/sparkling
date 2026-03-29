@@ -43,6 +43,8 @@ Clone the project
 ```
 git clone https://github.com/alexandru-htc/sparkling.git
 ```
+go to branch DBKS_17_3_TY_RUFF usimg vscode IDE or `git switch DBKS_17_3_TY_RUFF`
+
 assuming that sparkling is the folder where the project is located (for instance where the file pyproject.toml exists), open a command prompt there.
 Create the virtual environment and install the project
 ```
