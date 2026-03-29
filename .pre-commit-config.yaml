@@ -9,21 +9,21 @@ repos:
       - id: check-yaml
       - id: check-added-large-files
       - id: check-merge-conflict
-  - repo: https://github.com/psf/black
-    rev: 26.3.1
-    hooks:
-      - id: black
-        exclude: \.md$
+  # - repo: https://github.com/psf/black
+  #   rev: 26.3.1
+  #   hooks:
+  #     - id: black
+  #       exclude: \.md$
   - repo: https://github.com/pycqa/isort
     rev: 8.0.1
     hooks:
       - id: isort
         exclude: \.md$
-  - repo: https://github.com/pycqa/flake8
-    rev: 7.3.0
-    hooks:
-      - id: flake8
-        exclude: \.md$
+  # - repo: https://github.com/pycqa/flake8
+  #   rev: 7.3.0
+  #   hooks:
+  #     - id: flake8
+  #       exclude: \.md$
   - repo: local
     hooks:
       - id: ty
@@ -34,3 +34,12 @@ repos:
         pass_filenames: false
         always_run: true
         args: [--python=.venv/bin/python]
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.15.8
+    hooks:
+      # Run the linter.
+      - id: ruff-check
+        args: [ --fix ]
+      # Run the formatter.
+      - id: ruff-format

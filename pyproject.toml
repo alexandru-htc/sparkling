@@ -15,14 +15,14 @@ dependencies = [
 package-mode = false
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.0.0"
 isort = "^5.13.0"
-flake8 = "^7.0.0"
 pyspark = "^4.0.0"
 pre-commit = "^4.5.1"
 pytest = "^8.0.0"
-ty = "^0.0.26"
 
+[tool.poetry.group.lint.dependencies]
+ruff = "^0.15.8"
+ty = "^0.0.26"
 
 [tool.pyright]
 strict = true
