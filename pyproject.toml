@@ -23,6 +23,7 @@ pytest = "^8.0.0"
 [tool.poetry.group.lint.dependencies]
 ruff = "^0.15.8"
 ty = "^0.0.26"
+pylint = "^4.0.5"
 
 [tool.pyright]
 strict = true
