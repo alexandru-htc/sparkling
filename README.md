@@ -54,7 +54,7 @@ Now, the command prompt shall begin with something like ((.venv)) your_username:
 poetry lock
 poetry install
 ```
-Needed only once, if you want the precommit hooks
+The project comes with pre-commit already installed, here only as information:
 ```
 pre-commit install
 # if you want to test the precommit
