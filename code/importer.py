@@ -8,7 +8,7 @@ if TYPE_CHECKING:
 
 def import_my_csv(name:str)->DataFrame:
     """import a csv file and return a DataFrame"""
-    pth = "resources/" + name
+    pth = "../resources/" + name
     assert pathlib.Path(pth).exists(), f"File not found: {pth}"
 
     df = spark.read.csv(name, header=True, inferSchema=True)
