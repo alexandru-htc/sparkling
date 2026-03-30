@@ -21,7 +21,7 @@ You can do the same test in the vscode terminal
 pytest code/test_installed.py
 ```
 # pylint Information
-in this project pylint is still installed. You can still run, for reference, the pre-commit hook using `pre-commit run --hook-stage manual` or manualy using `pylint .`
+in this project pylint is still installed. You can run, for reference, the pre-commit hook using `pre-commit run --hook-stage manual` or manualy using `pylint .`
 
 
 
