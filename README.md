@@ -57,6 +57,8 @@ Needed only once, if you want the precommit hooks
 pre-commit install
 # if you want to test the precommit
 pre-commit run --all-files
+# or if you do not want them
+pre-commit uninstall
 ```
 Check if the test is working
 ```
