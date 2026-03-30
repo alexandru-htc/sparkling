@@ -57,8 +57,11 @@ poetry install
 The project comes with pre-commit already installed, here only as information:
 ```
 pre-commit install
-# if you want to test the precommit
+# if you want to test the pre-commit
 pre-commit run --all-files
+# if you don't need the pre-commit
+pre-commit uninstall
+# and commit the chages
 ```
 Check if the test is working
 ```
