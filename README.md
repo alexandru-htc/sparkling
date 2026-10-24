@@ -17,7 +17,7 @@ Where distro is a distro like Ubuntu
 
 __The following commands will be started in wsl terminal !!!__ 
 
-For Databricks Runtime 16..3 see the branch [DBKS_RUNTIME_16_4]https://github.com/alexandru-htc/sparkling/tree/DBKS_RUNTIME_16_4
+For Databricks Runtime 16..3 see the branch [DBKS_RUNTIME_16_4]https://github.com/alexandru-htc/sparkling/tree/DBKS_RUNTIME_16_4. There are some other Databricks versions tested, look for the branches. Basically, the difference here is the java version and the pyspark version (using here hardcoded 4.2.0)
 
 [Install Python](https://www.python.org/downloads/latest/python3.12/) if not already installed
 
@@ -31,13 +31,14 @@ pip shall now be installed togheter with python.
 ```
 curl -s "https://get.sdkman.io" | bash
 # install java:
-sdk install java 17.0.18-zulu
+sdk install java 21.0.12.fx-zulu
 # set home:
-sdk default java 17.0.18-zulu
+sdk default java  21.0.12.fx-zulu
 # kill terminal / restart
 java --version
-openjdk 17.0.18 2026-01-20 LTS
-OpenJDK Runtime Environment Zulu17.64+15-CA (build 17.0.18+8-LTS)
+openjdk 21.0.12 2026-07-21 LTS
+OpenJDK Runtime Environment Zulu21.52+15-CA (build 21.0.12+8-LTS)
+OpenJDK 64-Bit Server VM Zulu21.52+15-CA (build 21.0.12+8-LTS, mixed mode, sharing)
 ```
 Clone the project
 ```
@@ -75,6 +76,15 @@ Now, the command prompt shall begin with something like
 You can do the same test in the vscode terminal
 ```
 pytest code/test_installed.py
+pytest code/test_installed.py
+=========================== test session starts ==========================
+platform linux -- Python 3.12.12, pytest-8.4.2, pluggy-1.6.0
+rootdir: /home/alex/code/sparkling
+configfile: pyproject.toml
+collected 1 item 
+code/test_installed.py .                                             [100%]
+
+=========================== 1 passed in 19.70s ===========================
 ```
 
 
