@@ -16,7 +16,7 @@ package-mode = false
 
 [tool.poetry.group.dev.dependencies]
 isort = "^5.13.0"
-pyspark = "^4.0.0"
+pyspark = "==4.2.0"
 pre-commit = "^4.5.1"
 pytest = "^8.0.0"
 
